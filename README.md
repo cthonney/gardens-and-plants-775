@@ -40,6 +40,12 @@
   + `mkdir -p ~/code/#YOUR_USERNAME/livecodes && cd $_`
   + `gh repo clone cthonney/gardens-and-plants-775`
   + `cd gardens-and-plants-775`
+  + `rm -rf .git`
+  + `git init`
+  + `git add .`
+  + `git commit -m "rails clone"`
+  + `gh repo create`
+  + `git push origin master`
   + `yarn install`
   + `bundle install`
   + `rails db:reset`  (**db:reset** run db:drop db:create db:schema:load db:seed )
