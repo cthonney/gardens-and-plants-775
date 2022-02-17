@@ -34,7 +34,7 @@
 + `rails db:migrate`
 
 ## Generate Plant Controller
-  + rails g controller plants`
+  + `rails g controller plants`
 
 ## If you want clone this app
   + `mkdir -p ~/code/#YOUR_USERNAME/livecodes && cd $_`
