@@ -1,24 +1,44 @@
-# README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
-Things you may want to cover:
+## Generate Rails App
 
-* Ruby version
++ `rails new -T gardens-and-plants && cd $_`
 
-* System dependencies
 
-* Configuration
+## Push to Github
 
-* Database creation
++ `git add .`
 
-* Database initialization
++ `git commit -m "rails new"`
 
-* How to run the test suite
++ `gh repo create`
++ `git push origin master`
 
-* Services (job queues, cache servers, search engines, etc.)
+## Front-end
++ Follow front-end setup guidelines (https://github.com/lewagon/rails-stylesheets/blob/master/README.md)
 
-* Deployment instructions
 
-* ...
+## Scaffold gardens (Model, View, Controller)
+  + `rails g scaffold gardens name banner_url`
+  + (Open your Gemfile and comment out jbuilder before generating your scaffold)
+  + `rails db:create`
+  + `rails db:migrate`
+
+
+## Banner
++ https://uikit.lewagon.com/documentation#banners
+
+
+## Generate Plant Model
++ `rails g model Plant garden:references name image_url`
++ `rails db:migrate`
+
+## Generate Plant Controller
+  + rails g controller plants`
+
+## If you want clone this app
+  
+
+
+
+
